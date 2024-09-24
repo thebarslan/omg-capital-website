@@ -6,7 +6,6 @@ import Image from "next/image";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaMediumM } from "react-icons/fa";
-import { FaRegCopyright } from "react-icons/fa6";
 
 const Footer = () => {
    return (

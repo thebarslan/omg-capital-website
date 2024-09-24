@@ -75,11 +75,11 @@ const Team = () => {
                            management systems. Umut Aydoğan continued his career
                            in Ünlü&Co as COO Ünlü Portfolio Management between
                            2014 and 2020,where he also served the company as a
-                           member of the Board. Umut's professional specialties
-                           along with his extensive experience in capital
-                           markets operations in Turkey, include execution and
-                           administration of ABS issuance operations and
-                           structured financial products.
+                           member of the Board. Umut&apos;s professional
+                           specialties along with his extensive experience in
+                           capital markets operations in Turkey, include
+                           execution and administration of ABS issuance
+                           operations and structured financial products.
                         </h5>
                      </div>
                   </div>

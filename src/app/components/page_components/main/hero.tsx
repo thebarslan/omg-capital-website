@@ -1,14 +1,6 @@
 "use client";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import SliderImage from "../../../assets/images/slider-images/slider-img.jpg";
-import SliderImage2 from "../../../assets/images/slider-images/slider-img-2.jpg";
-import Image from "next/image";
+
 import Container from "../../common/container";
 const Hero = () => {
    return (

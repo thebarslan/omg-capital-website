@@ -4,7 +4,7 @@ import Container from "./container";
 import Logo from "../../assets/images/logo.png";
 import Image from "next/image";
 import Hamburger from "hamburger-react";
-import { FaInstagram, FaMediumM, FaTelegramPlane } from "react-icons/fa";
+import { FaInstagram, FaMediumM } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {

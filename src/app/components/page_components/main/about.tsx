@@ -24,7 +24,7 @@ const About = () => {
                      </div>
                      <div className="title-container2 mt-5">
                         <h5 className="text-2xl font-bold">
-                           Since the firm's founding in 1994, OMG Capital
+                           Since the firm&apos;s founding in 1994, OMG Capital
                            Advisors has employed the same core investment
                            philosophy.
                         </h5>
