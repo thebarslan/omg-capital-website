@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: "Montserrat";
+   src: url("../app/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+   font-weight: 100 900; /* if it's a variable font, specify the range */
+}
+
+* {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+}
+
+@layer utilities {
+   .text-balance {
+      text-wrap: balance;
+   }
+}
+.swiper-scrollbar {
+   display: hidden !important;
+   width: 0% !important;
+}
+.swiper-scrollbar-drag {
+   width: 0% !important;
+}
+.swiper-button-prev {
+   color: rgba(0, 0, 0, 0.799) !important;
+   left: 30px !important;
+}
+.swiper-button-next {
+   right: 30px !important;
+   color: rgba(0, 0, 0, 0.799) !important;
+}
+.swiper-pagination-bullet-active {
+   background-color: white !important;
+}
+.swiper-pagination-bullet {
+   background-color: white !important;
+}
+.slider-item {
+   background-image: url("./assets/images/slider-images/slider-img-2.jpg");
+   background-size: cover;
+}
+.team-item {
+   background-image: url("./assets/images/ourteam2.jpg");
+   background-size: cover;
+}
+.firm-item {
+   background-image: url("./assets/images/firm/firm.jpg");
+   background-size: cover;
+}
+.shadow {
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 16px 0px;
+}
+.triangle {
+   width: 0;
+   height: 0;
+   border-left: 8px solid transparent;
+   border-right: 8px solid transparent;
+
+   border-bottom: 12px solid white;
+}
+/* From Uiverse.io by kamehame-ha */
+.coolinput {
+   display: flex;
+   flex-direction: column;
+   width: fit-content;
+   position: static;
+   width: 100%;
+}
+
+.coolinput label.text {
+   font-size: 0.75rem;
+   color: #a33037;
+   font-weight: 700;
+   position: relative;
+   top: 0.5rem;
+   margin: 0 0 0 7px;
+   padding: 0 3px;
+   background: #ffffff;
+   width: fit-content;
+}
+
+.coolinput input[type="text"].input {
+   padding: 11px 10px;
+   font-size: 0.75rem;
+   border: 2px #707071 solid;
+   border-radius: 5px;
+   background: #ffffff;
+}
+
+.coolinput input[type="text"].input:focus {
+   outline: none;
+}
+
+.login-gradient {
+   background: #536976; /* fallback for old browsers */
+   background: -webkit-linear-gradient(
+      0deg #a33037,
+      #536976
+   ); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(
+      0deg,
+      #efefed,
+      #bacbdd
+   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   overflow: hidden !important;
+   overflow-y: hidden !important;
+   overflow-x: hidden !important;
+}
+
+.check-container input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+}
+
+.check-container {
+   display: block;
+   position: relative;
+   padding-left: 35px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 22px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+/* Create a custom checkbox */
+.checkmark {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 16px;
+   width: 16px;
+   border-radius: 2px;
+   background-color: #eee;
+   border: 1px solid rgb(112, 112, 112);
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+   background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+   background-color: rgb(37, 37, 37);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+   display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+   left: 4px;
+   top: 1px;
+   width: 5px;
+   height: 9px;
+   border: solid white;
+   border-width: 0 2px 2px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+.login-btn {
+   background: rgb(0, 0, 0);
+   background: linear-gradient(90deg, rgb(36, 36, 36) 0%, rgb(76, 76, 76) 100%);
+}
+.pattern {
+   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(240, 6.69%, 17.60%, 0)'/><path d='M3.25 10h13.5M10 3.25v13.5'  stroke-linecap='square' stroke-width='1' stroke='hsla(47, 0%, 0%, 0.08)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+
+.mobile-menu {
+   position: absolute;
+   top: 0svh;
+   left: -100svw;
+   width: 100svw;
+   height: 100svh;
+   /* Adjust your color */
+   transition: left 0.3s ease-in-out;
+   overflow: hidden; /* Smooth transition for opening and closing */
+}
+
+.mobile-menu.active {
+   left: 0; /* Bring it down when active */
+}
+
+.about-image {
+   aspect-ratio: 7/3;
+}
