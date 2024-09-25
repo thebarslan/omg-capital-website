@@ -187,17 +187,17 @@
 
 .mobile-menu {
    position: absolute;
-   top: 0svh;
-   left: -100svw;
+   top: -92svh;
+   left: 0px;
    width: 100svw;
    height: 100svh;
    /* Adjust your color */
-   transition: left 0.3s ease-in-out;
+   transition: top 0.3s ease-in-out;
    overflow: hidden; /* Smooth transition for opening and closing */
 }
 
 .mobile-menu.active {
-   left: 0; /* Bring it down when active */
+   top: 0px; /* Bring it down when active */
 }
 
 .about-image {
