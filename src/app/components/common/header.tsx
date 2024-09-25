@@ -69,13 +69,13 @@ const Header = () => {
             </div>
          </div>
          <Container>
-            <div className="header-inner-container flex w-full lg:h-[80px] h-[78px]  justify-between items-center relative z-[300]">
+            <div className="header-inner-container flex w-full lg:h-[80px] h-[78px]  justify-between items-center relative z-[400]">
                <div className="logo-container">
                   <a href="/">
                      <Image
                         src={Logo}
                         alt="omg-logo"
-                        className="lg:h-[48px] h-[48px] -mt-[3px] w-auto"
+                        className="lg:h-[48px] h-[48px] -mt-[3px] w-auto relatize z-[500]"
                      />
                   </a>
                </div>
