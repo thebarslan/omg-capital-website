@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../../common/container";
-import AboutImage from "../../../assets/images/about.jpg";
-import Image from "next/image";
+
 const About = () => {
    return (
       <div className="lg:mt-14 lg:mb-14 mt-12 mb-6 w-full h-auto">

@@ -11,11 +11,9 @@ const Header = () => {
    const [isOpen, setOpen] = useState(false);
    const [CommunityHover, setCommunityHover] = useState(false);
    const [ContactHover, setContactHover] = useState(false);
-   const [NewsHover, setNewsHover] = useState(false);
    useEffect(() => {
       setCommunityHover(false);
       setContactHover(false);
-      setNewsHover(false);
    }, []);
    return (
       <div className="header-container w-full shadow-md bg-[#F1F1F1] relative">

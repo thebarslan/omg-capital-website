@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import Logo from "../../../assets/images/logo.png";
 import { FaNewspaper } from "react-icons/fa";
-import { AiOutlineStock } from "react-icons/ai";
 import { IoMdAddCircle } from "react-icons/io";
 import { FaUsers } from "react-icons/fa";
 

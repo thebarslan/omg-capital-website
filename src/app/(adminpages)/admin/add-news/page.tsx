@@ -1,9 +1,9 @@
 import React from "react";
 
 const AddNews = () => {
-   var curr = new Date();
+   const curr = new Date();
    curr.setDate(curr.getDate());
-   var date = curr.toISOString().substring(0, 10);
+   const date = curr.toISOString().substring(0, 10);
    <input
       id="dateRequired"
       type="date"
