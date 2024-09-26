@@ -1,9 +1,8 @@
 import "../globals.css";
 export const metadata = {
-   title: "OMG Capital - Login Account",
-   description: "OMG Capital Login Account",
+   title: "OMG Capital - Forgot Password",
+   description: "OMG Capital Forgot Password",
 };
-
 export default function RootLayout({
    children,
 }: {

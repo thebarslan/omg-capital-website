@@ -21,13 +21,47 @@ const Footer = () => {
                                  <Image
                                     src={Logo}
                                     alt="omg-logo"
-                                    className="h-[100px] w-auto"
+                                    className="lg:h-[100px] w-auto h-[60px]"
                                  />
                               </a>
                            </div>
                         </div>
                      </div>
-                     <div className="middle flex-1  justify-center items-center text-center h-full"></div>
+                     <div className="middle flex-1 justify-center items-center text-center h-full flex flex-col gap-3">
+                        <div className="h-full flex flex-col justify-center gap-3 mt-1">
+                           <div className="title-container">
+                              <h5 className="font-bold text-[18px]">
+                                 NAVIGATION
+                              </h5>
+                           </div>
+                           <div className="links w-full flex flex-col text-center   gap-[6px]">
+                              <a
+                                 href="/"
+                                 className="text-[15px] hover:text-logoRed transition-colors duration-300"
+                              >
+                                 Home
+                              </a>
+                              <a
+                                 href="/"
+                                 className="text-[15px] hover:text-logoRed transition-colors duration-300"
+                              >
+                                 Team
+                              </a>
+                              <a
+                                 href="/"
+                                 className="text-[15px] hover:text-logoRed transition-colors duration-300"
+                              >
+                                 Our Firm
+                              </a>
+                              <a
+                                 href="/"
+                                 className="text-[15px] hover:text-logoRed transition-colors duration-300"
+                              >
+                                 News
+                              </a>
+                           </div>
+                        </div>
+                     </div>
                      <div className="right flex-1 w-full flex flex-col lg:items-end items-center -mt-0 h-full justify-center">
                         <div className="socials h-full flex flex-col justify-center gap-5 lg:items-end items-center">
                            <h5 className="text-[16px] font-extrabold">

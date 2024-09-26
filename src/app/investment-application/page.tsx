@@ -1,7 +1,18 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Logo from "../assets/images/logo.png";
 import Image from "next/image";
+import Step1 from "../components/page_components/investment-application/step1";
+import Step2 from "../components/page_components/investment-application/step2";
 const InvestmentApplicationPage = () => {
+   const [step, setStep] = useState(1);
+   const handleStep = () => {
+      if (step === 2) {
+         console.log("Navigate");
+         return;
+      }
+      setStep(step + 1);
+   };
    return (
       <div className="w-screen h-screen login-gradient overflow-x-hidden overflow-y-hidden text-white flex items-center overflow-hidden relative">
          <div className="pattern absolute w-[4000px] h-[4000px] -right-[2800px] -bottom-[2800px] -rotate-[135deg]"></div>
@@ -14,28 +25,11 @@ const InvestmentApplicationPage = () => {
                      className="w-[150px] h-auto"
                   />
                   <div className="steps">
-                     <h5 className="text-black">Step 1/3</h5>
+                     <h5 className="text-black">Step {step}/2</h5>
                   </div>
                </div>
-               <div className="title-container w-full items-center mt-8">
-                  <h5 className="text-[17px] text-black">
-                     Fill the informations.
-                  </h5>
-               </div>
-               <div className="input-container flex items-start gap-0 mt-6 text-black flex-col">
-                  <h5 className="text-[13px] font-medium pl-[2px]">Name</h5>
-                  <input
-                     type="text"
-                     className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
-                  />
-               </div>
-               <div className="input-container flex items-start gap-0 mt-3 text-black flex-col">
-                  <h5 className="text-[13px] font-medium pl-[2px]">Surname</h5>
-                  <input
-                     type="text"
-                     className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
-                  />
-               </div>
+               {step === 1 && <Step1 />}
+               {step === 2 && <Step2 />}
             </div>
             <div className="bottom flex items-center justify-between w-full h-20 px-10 text-black">
                <div className="left flex items-center text-[14px] font-medium">
@@ -43,7 +37,10 @@ const InvestmentApplicationPage = () => {
                </div>
 
                <div className="right flex gap-6">
-                  <button className="hover:bg-black hover:text-white transition-colors duration-300  px-4 py-[6px] bg-logoRed text-white rounded-lg text-[14px]">
+                  <button
+                     className="hover:bg-black hover:text-white transition-colors duration-300  px-4 py-[6px] bg-logoRed text-white rounded-lg text-[14px]"
+                     onClick={handleStep}
+                  >
                      Next Step
                   </button>
                </div>

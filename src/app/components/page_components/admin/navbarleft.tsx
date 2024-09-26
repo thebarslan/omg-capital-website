@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "../../../assets/images/logo.png";
-
+import { FaNewspaper } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import { IoMdAddCircle } from "react-icons/io";
 import { FaUsers } from "react-icons/fa";
 
 const NavbarLeft = () => {
    return (
-      <div className="w-[260px] h-screen bg-white shadow flex flex-col ">
+      <div className="w-[260px] h-screen bg-white shadow flex flex-col flex-shrink-0 ">
          <div className="logo-container w-full flex items-center justify-start px-2 py-6">
             <Image
                src={Logo}
@@ -19,25 +19,25 @@ const NavbarLeft = () => {
          <div className="links-container ">
             <div className="link w-full h-12 shadow-sm flex items-center justify-start  text-[15px] gap-2">
                <a
-                  href="/"
+                  href="/admin/news"
                   className="flex gap-2 items-center justify-start w-full h-full pl-8 hover:bg-[#e7e7e7] transition-colors duration-300"
                >
-                  <AiOutlineStock className="text-[20px]" />
-                  <h5>Stocks</h5>
+                  <FaNewspaper className="text-[20px]" />
+                  <h5>News List</h5>
                </a>
             </div>
             <div className="link w-full h-12 shadow-sm flex items-center justify-start  text-[15px] gap-2">
                <a
-                  href="/"
+                  href="/admin/add-news"
                   className="flex gap-2 items-center justify-start w-full h-full pl-8 hover:bg-[#e7e7e7] transition-colors duration-300"
                >
                   <IoMdAddCircle className="text-[20px]" />
-                  <h5>Add Stock</h5>
+                  <h5>Add News</h5>
                </a>
             </div>
             <div className="link w-full h-12 shadow-sm flex items-center justify-start  text-[15px] gap-2">
                <a
-                  href="/"
+                  href="/admin/users"
                   className="flex gap-2 items-center justify-start w-full h-full pl-8 hover:bg-[#e7e7e7] transition-colors duration-300"
                >
                   <FaUsers className="text-[20px]" />

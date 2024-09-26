@@ -26,12 +26,15 @@
    width: 0% !important;
 }
 .swiper-button-prev {
-   color: rgba(0, 0, 0, 0.799) !important;
+   color: rgb(255, 255, 255) !important;
    left: 30px !important;
 }
 .swiper-button-next {
    right: 30px !important;
-   color: rgba(0, 0, 0, 0.799) !important;
+   color: rgb(255, 255, 255) !important;
+}
+.swiper-pagination {
+   bottom: 2px !important;
 }
 .swiper-pagination-bullet-active {
    background-color: white !important;
@@ -49,6 +52,10 @@
 }
 .firm-item {
    background-image: url("./assets/images/firm/firm.jpg");
+   background-size: cover;
+}
+.news-item {
+   background-image: url("./assets/images/news/news_image.jpg");
    background-size: cover;
 }
 .shadow {
@@ -189,7 +196,7 @@
    position: absolute;
    top: -20px;
    left: 0px;
-   width: 100svw;
+   width: 100%;
    height: 0px;
    /* Adjust your color */
    transition: all 0.3s ease-in-out;
@@ -197,7 +204,7 @@
 }
 
 .mobile-menu.active {
-   height: 420px; /* Bring it down when active */
+   height: 400px; /* Bring it down when active */
 }
 
 .about-image {

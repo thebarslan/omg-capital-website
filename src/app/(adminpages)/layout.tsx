@@ -13,8 +13,10 @@ export default function RootLayout({
    return (
       <html lang="en">
          <body>
-            <NavbarLeft />
-            {children}
+            <div className="flex">
+               <NavbarLeft />
+               <div className="lg:p-20 w-full">{children}</div>
+            </div>
          </body>
       </html>
    );

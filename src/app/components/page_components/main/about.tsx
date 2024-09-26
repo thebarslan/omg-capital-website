@@ -4,19 +4,12 @@ import AboutImage from "../../../assets/images/about.jpg";
 import Image from "next/image";
 const About = () => {
    return (
-      <div className="lg:my-20 my-12 w-full h-auto">
+      <div className="lg:mt-14 lg:mb-14 mt-12 mb-6 w-full h-auto">
          <Container>
             <div className="w-full flex flex-col">
                <div className="main-container w-full lg:gap-12 gap-2 flex lg:flex-row flex-col">
-                  <div className="image-container lg:h-[200px] about-image relative">
-                     {/* <div className="image-black absolute left-0 top-0 aspect-[7/3] lg:h-[180px] bg-[#0000003e]"></div> */}
-                     <Image
-                        src={AboutImage}
-                        alt="about-omg-capital"
-                        className="object-cover"
-                     />
-                  </div>
-                  <div className="text-container flex-1 flex flex-col py-8">
+                  {/* u */}
+                  <div className="text-container flex-1 flex flex-col py-6">
                      <div className="title-container">
                         <h5 className="text-[15px]  text-logoGray">
                            About OMG Capital Advisors

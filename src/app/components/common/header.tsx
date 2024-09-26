@@ -18,18 +18,18 @@ const Header = () => {
       setNewsHover(false);
    }, []);
    return (
-      <div className="header-container w-full shadow-md bg-[#F1F1F1]">
+      <div className="header-container w-full shadow-md bg-[#F1F1F1] relative">
          <div
-            className={`absolute mobile-menu w-full flex px-6 bg-[#F1F1F1] pt-24 z-[250] lg:hidden flex-col ${
+            className={`absolute mobile-menu w-full left-0 top-0 flex bg-[#F1F1F1] pt-24 z-[250] lg:hidden flex-col px-6 ${
                isOpen ? "active" : ""
             }`}
          >
             <div className="links w-full flex flex-col gap-2 *:text-black mt-5">
                <a href="/">HOME</a>
 
-               <a href="/#dao">WHO WE ARE</a>
-               <a href="/#finance">CONTACT</a>
-               <a href="/resources">NEWS</a>
+               <a href="/team">TEAM</a>
+               <a href="/our-firm">OUR FIRM</a>
+               <a href="/news">NEWS</a>
                <div className="link mt-6">
                   <a
                      href="/login"
@@ -161,29 +161,13 @@ const Header = () => {
                         </div>
                      )}
                   </div>
-                  <div
-                     className="community relative"
-                     onMouseEnter={() => setNewsHover(true)}
-                     onMouseLeave={() => setNewsHover(false)}
-                  >
-                     <a href="#">NEWS</a>
-                     {NewsHover && (
-                        <div className="hoverable-community-menu absolute w-[110px] h-auto -left-1 pt-10 top-0 z-[1000] flex flex-col ">
-                           <div className="menu bg-white rounded-lg w-full h-full relative shadow">
-                              <div className="triangle -top-3 left-4 absolute"></div>
-
-                              <div className="link h-10 w-full flex items-center">
-                                 <a
-                                    href="/team"
-                                    className="hover:bg-logoRed text-black hover:text-white w-full h-full flex items-center gap-[10px] pl-3  justify-start rounded-[6px] transition-colors duration-300"
-                                 >
-                                    <FaMediumM className="text-[14px] mb-[1px]" />
-                                    <h5 className="text-[13px]">Medium</h5>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                     )}
+                  <div className="link">
+                     <a
+                        href="/news"
+                        className="w-full h-full hover:text-logoRed font-semibold"
+                     >
+                        NEWS
+                     </a>
                   </div>
                   <div className="link">
                      <a
