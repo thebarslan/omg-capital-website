@@ -33,7 +33,7 @@ const LatestNews = () => {
       return () => window.removeEventListener("resize", checkScreenSize);
    }, []);
    return (
-      <div className="latest-news w-full h-auto flex mb-24 lg:mt-[80px] mt-6">
+      <div className="latest-news w-full h-auto flex mb-24 lg:mt-[80px] mt-10">
          <Container>
             <div className="bigger-container w-full flex flex-col gap-6">
                <h5 className="text-3xl font-bold">Latest News</h5>
