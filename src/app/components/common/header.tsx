@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Container from "./container";
 import Logo from "../../assets/images/logo.png";
 import Image from "next/image";
 import Hamburger from "hamburger-react";
