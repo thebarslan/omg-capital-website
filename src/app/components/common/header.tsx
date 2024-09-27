@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "../../assets/images/logo.png";
 import Image from "next/image";
 import Hamburger from "hamburger-react";
-import { FaInstagram, FaMediumM } from "react-icons/fa";
-import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 const Header = () => {
    const [isOpen, setOpen] = useState(false);
@@ -139,14 +138,15 @@ const Header = () => {
 
                               <div className="link h-10 w-full flex items-center">
                                  <a
-                                    href="/team"
-                                    className="hover:bg-logoRed text-black hover:text-white w-full h-full flex items-center gap-[10px] pl-3  justify-start rounded-tl-[6px] rounded-tr-[6px] transition-colors duration-300"
+                                    href="https://www.linkedin.com/company/omg-capital-financial-advisory/"
+                                    target="_blank"
+                                    className="hover:bg-logoRed text-black hover:text-white w-full h-full flex items-center gap-[10px] pl-3  justify-start rounded-[6px] transition-colors duration-300"
                                  >
-                                    <FaXTwitter className="text-[14px] mb-[1px]" />
-                                    <h5 className="text-[13px]">Twitter</h5>
+                                    <FaLinkedin className="text-[14px] mb-[1px]" />
+                                    <h5 className="text-[13px]">Linkedin</h5>
                                  </a>
                               </div>
-                              <div className="link h-10 w-full flex items-center">
+                              {/* <div className="link h-10 w-full flex items-center">
                                  <a
                                     href="/team"
                                     className="hover:bg-logoRed text-black hover:text-white w-full h-full flex items-center gap-[10px] pl-3  justify-start transition-colors duration-300"
@@ -163,7 +163,7 @@ const Header = () => {
                                     <FaMediumM className="text-[14px] mb-[1px]" />
                                     <h5 className="text-[13px]">Medium</h5>
                                  </a>
-                              </div>
+                              </div> */}
                            </div>
                         </div>
                      )}
