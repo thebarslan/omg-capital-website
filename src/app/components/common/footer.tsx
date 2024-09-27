@@ -11,7 +11,7 @@ const Footer = () => {
    return (
       <div className="w-full flex lg:h-[300px] h-auto bg-[#f0f0f0]">
          <Container>
-            <div className="w-full justify-between lg:pt-8 pt-16 h-full flex flex-col lg:gap-0 gap-12">
+            <div className="w-full justify-between lg:pt-8 pt-16 h-full flex flex-col lg:gap-0 gap-12 xl:px-4 px-0">
                <div className="top h-full flex-1 w-full">
                   <div className="w-full flex justify-between h-full lg:flex-row flex-col lg:gap-0 gap-12">
                      <div className="left flex-1 w-full flex flex-col lg:items-start items-center">
