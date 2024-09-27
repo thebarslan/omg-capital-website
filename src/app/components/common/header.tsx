@@ -25,6 +25,7 @@ const Header = () => {
                <a href="/">HOME</a>
 
                <a href="/team">TEAM</a>
+               <a href="/about-us">ABOUT US</a>
                <a href="/our-firm">OUR FIRM</a>
                <a href="/news">NEWS</a>
                <div className="link mt-6">
@@ -103,6 +104,14 @@ const Header = () => {
                                     className="hover:bg-logoRed text-black hover:text-white w-full h-full flex items-center gap-[10px] pl-3 justify-start rounded-tl-[6px] rounded-tr-[6px] transition-colors duration-300"
                                  >
                                     <h5 className="text-[13px]">Our Team</h5>
+                                 </a>
+                              </div>
+                              <div className="link h-10 w-full flex items-center">
+                                 <a
+                                    href="/about-us"
+                                    className="hover:bg-logoRed text-black hover:text-white w-full h-full flex items-center gap-[10px] pl-3 justify-start  transition-colors duration-300"
+                                 >
+                                    <h5 className="text-[13px]">About us</h5>
                                  </a>
                               </div>
                               <div className="link h-10 w-full flex items-center">

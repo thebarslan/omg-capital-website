@@ -54,6 +54,10 @@
    background-image: url("./assets/images/firm/firm.jpg");
    background-size: cover;
 }
+.about-item {
+   background-image: url("./assets/images/about/about.jpg");
+   background-size: cover;
+}
 .news-item {
    background-image: url("./assets/images/news/news_image.jpg");
    background-size: cover;
