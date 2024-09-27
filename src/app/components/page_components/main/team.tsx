@@ -42,16 +42,15 @@ const Team = () => {
                         growth and long-term success for their clients.
                         <br></br>
                         <br></br>
-                        Their collaborative and dynamic team environment fosters
-                        innovative thinking and meticulous execution, ensuring
-                        that clients receive the highest standard of service in
-                        every engagement. The OMG Capital Team is committed to
-                        building strong, lasting relationships with their
-                        clients, guiding them through complex financial
-                        transactions and strategic decisions with integrity,
-                        professionalism, and a focus on achieving optimal
-                        outcomes.
                      </p>
+                  </div>
+                  <div className="button-container mt-3">
+                     <a
+                        href="/about-us"
+                        className="px-8 py-[6px] bg-[#ffffff2e] border-2 border-black text-blackk rounded-md hover:bg-logoRed hover:border-logoRed hover:text-white transition-all duration-300 text-[15px]"
+                     >
+                        READ MORE
+                     </a>
                   </div>
                </div>
             </div>

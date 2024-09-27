@@ -23,34 +23,44 @@ const AboutUs = () => {
                <div className="firm-inside-container">
                   <div className="title-container w-full">
                      <h5 className="lg:text-4xl text-2xl font-bold">
-                        About OMG Capital Team
+                        About OMG Capital Advisors
                      </h5>
                   </div>
                   <div className="paragraph-container mt-8">
-                     <p>
-                        The OMG Capital Team is composed of highly experienced
-                        investment banking professionals with a diverse
-                        background in finance, economics, and strategic
-                        consulting. With over 20 years of combined experience in
-                        local and international markets, the team brings a
-                        wealth of expertise in corporate finance, mergers and
-                        acquisitions, debt restructuring, and capital raising.
-                        Each member is dedicated to delivering exceptional value
-                        through a client-centric approach, leveraging deep
-                        industry knowledge and strategic insight to provide
-                        customized financial solutions that support sustainable
-                        growth and long-term success for their clients.
+                     <p className="lg:text-base text-[14px] lg:font-semibold font-medium">
+                        OMG Capital Advisors is a leading investment banking
+                        firm with over 20 years of experience in providing
+                        tailored financial solutions to businesses across
+                        various industries. The firm specializes in corporate
+                        finance, mergers and acquisitions, debt restructuring,
+                        and capital raising, offering a wide range of strategic
+                        advisory services to support clients in navigating
+                        complex financial landscapes. With a team of seasoned
+                        professionals, OMG Capital Advisors combines deep market
+                        insight with innovative financial strategies to help
+                        clients achieve sustainable growth, optimize capital
+                        structures, and maximize shareholder value.
                         <br></br>
                         <br></br>
-                        Their collaborative and dynamic team environment fosters
-                        innovative thinking and meticulous execution, ensuring
-                        that clients receive the highest standard of service in
-                        every engagement. The OMG Capital Team is committed to
-                        building strong, lasting relationships with their
-                        clients, guiding them through complex financial
-                        transactions and strategic decisions with integrity,
-                        professionalism, and a focus on achieving optimal
-                        outcomes.
+                        The firm is dedicated to building long-term partnerships
+                        and delivering exceptional value through a
+                        client-centric approach. Its comprehensive service
+                        offerings are designed to address the unique challenges
+                        faced by companies at different stages of their growth.
+                        Whether guiding businesses through strategic
+                        transactions or assisting with capital management, OMG
+                        Capital Advisors provides expert guidance and customized
+                        solutions to drive successful outcomes.
+                        <br></br>
+                        <br></br>
+                        By leveraging its extensive network and profound
+                        industry expertise, the firm plays a pivotal role in
+                        empowering clients to make informed financial decisions.
+                        OMG Capital Advisors is committed to upholding the
+                        highest standards of integrity and excellence,
+                        consistently striving to exceed client expectations and
+                        contribute to their long-term success in an
+                        ever-evolving global market.
                      </p>
                   </div>
                </div>
