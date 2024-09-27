@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 
-import Container from "../../common/container";
 const Hero = () => {
    return (
       <div className="slider w-full flex max-h-[650px] h-full">
