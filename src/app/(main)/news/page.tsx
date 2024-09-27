@@ -24,7 +24,7 @@ const News = () => {
          </div>
          <div className="bigger-container w-full flex flex-col gap-6 lg:my-20 my-12">
             <Container>
-               <div className="latest-news-container w-full lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid gap-8">
+               <div className="latest-news-container w-full lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid gap-8 2xl:px-0 px-6">
                   <a
                      className="news h-[380px] w-full  flex flex-col relative"
                      href="https://medium.com"
