@@ -31,9 +31,24 @@ const LatestNews = () => {
             setSlidePerview(3);
          }
       };
+
+      // Run once on page render
+      checkScreenSize();
+
+      // Run again after 1 second
+      const timeout = setTimeout(() => {
+         checkScreenSize();
+      }, 1000);
+
+      // Add event listener to track resize
       window.addEventListener("resize", checkScreenSize);
-      return () => window.removeEventListener("resize", checkScreenSize);
+
+      return () => {
+         clearTimeout(timeout); // Clear timeout on component unmount
+         window.removeEventListener("resize", checkScreenSize); // Clean up resize listener
+      };
    }, []);
+
    return (
       <div className="latest-news w-full h-auto flex mb-24 lg:mt-[80px] mt-10">
          <Container>
