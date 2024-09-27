@@ -107,16 +107,8 @@
 }
 
 .login-gradient {
-   background: #536976; /* fallback for old browsers */
-   background: -webkit-linear-gradient(
-      0deg #a33037,
-      #536976
-   ); /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(
-      0deg,
-      #efefed,
-      #bacbdd
-   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: url("./assets/images/login-bg-5.jpg");
+   background-size: cover;
    overflow: hidden !important;
    overflow-y: hidden !important;
    overflow-x: hidden !important;
