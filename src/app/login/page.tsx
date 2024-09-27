@@ -70,7 +70,7 @@ const Login = () => {
                   </a>
                </div>
             </div>
-            <div className="bottom flex items-center justify-between w-full h-20 px-10 text-black">
+            <div className="bottom flex lg:flex-row flex-col items-center justify-between w-full h-20 px-10 lg:py-0 py-[9px] text-black">
                <div className="left flex items-center text-[14px] font-medium">
                   <h5>© 2011 - 2024 OMG CAPITAL ADVISORS GROUP</h5>
                </div>
@@ -78,13 +78,13 @@ const Login = () => {
                <div className="right flex gap-6">
                   <a
                      href="/"
-                     className="hover:bg-black hover:text-white transition-colors duration-300  px-4 py-[6px] bg-logoRed text-white rounded-lg text-[14px]"
+                     className="hover:bg-black hover:text-white transition-colors duration-300  px-4 py-[6px] bg-logoRed text-white rounded-lg text-[13upx]"
                   >
                      HOME
                   </a>
                   <a
                      href="/"
-                     className="hover:bg-black hover:text-white transition-colors duration-300  px-4 py-[6px] bg-logoRed text-white rounded-lg text-[14px]"
+                     className="hover:bg-black hover:text-white transition-colors duration-300  px-4 py-[6px] bg-logoRed text-white rounded-lg text-[13upx]"
                   >
                      REGISTER
                   </a>
