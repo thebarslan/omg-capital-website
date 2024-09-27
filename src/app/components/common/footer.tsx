@@ -6,6 +6,7 @@ import Image from "next/image";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaMediumM } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
    return (
@@ -69,12 +70,13 @@ const Footer = () => {
                            </h5>
                            <div className="social-links flex flex-col gap-[10px] text-end">
                               <a
-                                 href="/"
+                                 target="_blank"
+                                 href="https://www.linkedin.com/company/omg-capital-financial-advisory/"
                                  className="flex items-center lg:justify-end justify-center lg:flex-row flex-row-reverse gap-2 text-[15px] hover:text-logoRed transition-colors duration-300"
                               >
-                                 Twitter <FaXTwitter className="text-[18px]" />
+                                 Linkedin <FaLinkedin className="text-[18px]" />
                               </a>
-                              <a
+                              {/* <a
                                  href="/"
                                  className="flex items-center lg:justify-end justify-center lg:flex-row flex-row-reverse gap-2 text-[15px] hover:text-logoRed transition-colors duration-300"
                               >
@@ -86,7 +88,7 @@ const Footer = () => {
                                  className="flex items-center lg:justify-end justify-center lg:flex-row flex-row-reverse gap-2 text-[15px] hover:text-logoRed transition-colors duration-300"
                               >
                                  Medium <FaMediumM className="text-[18px]" />
-                              </a>
+                              </a> */}
                            </div>
                         </div>
                      </div>

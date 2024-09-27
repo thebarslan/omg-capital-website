@@ -4,7 +4,7 @@ import Logo from "../../assets/images/logo.png";
 import Image from "next/image";
 import Hamburger from "hamburger-react";
 import { FaInstagram, FaMediumM } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const Header = () => {
    const [isOpen, setOpen] = useState(false);
@@ -40,14 +40,14 @@ const Header = () => {
             <div className="social-icons flex mt-8 gap-4">
                <div className="link h-10 flex items-center">
                   <a
-                     href="https://x.com/prddao?t=PQe1O14blRuYW7YHmEWYzw&s=09"
+                     href="https://www.linkedin.com/company/omg-capital-financial-advisory/"
                      target="_blank"
                      className=" text-black hover:text-logoRed w-full h-full flex items-center gap-4 rounded-tl-[6px] rounded-tr-[6px]"
                   >
-                     <FaXTwitter className="w-auto h-7" />
+                     <FaLinkedin className="w-auto h-7" />
                   </a>
                </div>
-               <div className="link h-10 flex items-center">
+               {/* <div className="link h-10 flex items-center">
                   <a
                      href="#"
                      className=" text-black hover:text-logoRed w-full h-full flex items-center gap-4 "
@@ -57,13 +57,13 @@ const Header = () => {
                </div>
                <div className="link h-10  flex items-center">
                   <a
-                     href="https://t.me/paraddao"
+                     href="#"
                      target="_blank"
                      className=" text-black hover:text-logoRed w-full h-full flex items-center gap-4 "
                   >
                      <FaMediumM className="w-auto h-7 " />
                   </a>
-               </div>
+               </div> */}
             </div>
          </div>
 
@@ -178,8 +178,7 @@ const Header = () => {
                   </div>
                   <div className="link -mr-2">
                      <a
-                        href="https://tahvilbonovdmk.pashabank.com.tr/app"
-                        target="_blank"
+                        href="/investment-application"
                         className="w-full h-full px-6 py-2 bg-logoRed rounded-md hover:bg-black duration-300 transition-colors text-white hover:text-white font-semibold text-[14px]"
                      >
                         VDMK Issuance
@@ -199,7 +198,6 @@ const Header = () => {
                   <div className="link">
                      <a
                         href="/investment-application"
-                        target="_blank"
                         className="w-full h-full px-3 py-2 bg-logoRed rounded-md hover:bg-black duration-300 transition-colors text-white hover:text-white font-semibold text-[12px]"
                      >
                         VDMK Issuance
