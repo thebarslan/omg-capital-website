@@ -167,6 +167,15 @@ const Header = () => {
                         NEWS
                      </a>
                   </div>
+                  <div className="link -mr-2">
+                     <a
+                        href="https://tahvilbonovdmk.pashabank.com.tr/app"
+                        target="_blank"
+                        className="w-full h-full px-6 py-2 bg-logoRed rounded-md hover:bg-black duration-300 transition-colors text-white hover:text-white font-semibold text-[14px]"
+                     >
+                        VDMK Issuance
+                     </a>
+                  </div>
                   <div className="link">
                      <a
                         href="/login"
@@ -177,7 +186,16 @@ const Header = () => {
                   </div>
                </div>
 
-               <div className="menu-icon lg:hidden flex ml-4">
+               <div className="menu-icon lg:hidden flex ml-4 items-center gap-2">
+                  <div className="link">
+                     <a
+                        href="/investment-application"
+                        target="_blank"
+                        className="w-full h-full px-5 py-2 bg-logoRed rounded-md hover:bg-black duration-300 transition-colors text-white hover:text-white font-semibold text-[13px]"
+                     >
+                        VDMK Issuance
+                     </a>
+                  </div>
                   <Hamburger
                      toggled={isOpen}
                      toggle={setOpen}

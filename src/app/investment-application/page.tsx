@@ -41,7 +41,8 @@ const InvestmentApplicationPage = () => {
                      className="hover:bg-black hover:text-white transition-colors duration-300  px-4 py-[6px] bg-logoRed text-white rounded-lg text-[14px]"
                      onClick={handleStep}
                   >
-                     Next Step
+                     {step === 1 && "Next"}
+                     {step === 2 && "Finish"}
                   </button>
                </div>
             </div>
