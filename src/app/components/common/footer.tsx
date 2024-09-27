@@ -3,9 +3,6 @@ import Container from "./container";
 import Logo from "../../assets/images/logo.png";
 import Image from "next/image";
 
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaMediumM } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
