@@ -22,29 +22,25 @@ const OurFirm = () => {
             <Container>
                <div className="firm-inside-container">
                   <div className="title-container w-full">
-                     <h5 className="text-4xl font-bold">
-                        OMG Capital Advisors
+                     <h5 className="lg:text-4xl text-2xl font-bold">
+                        Strategic Financial Solutions for Sustainable Growth
                      </h5>
                   </div>
                   <div className="paragraph-container mt-8">
                      <p>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit.
-                        Vitae faucibus mi ornare sed per ante. Facilisi sed
-                        ornare eget cursus netus lacinia ornare. Senectus
-                        senectus mi vulputate ac nisi mi. Euismod adipiscing
-                        tristique eu, cursus facilisis justo. Luctus etiam
-                        taciti convallis aliquet senectus lectus. Rutrum mattis
-                        laoreet finibus morbi suscipit interdum in. Hac sodales
-                        vulputate neque elementum tellus justo platea rhoncus.
-                        Conubia vestibulum turpis nec natoque interdum aliquam
-                        pellentesque nisl. Finibus sollicitudin pellentesque mi
-                        urna potenti. Elit suspendisse vulputate quis facilisis
-                        semper maximus. Lobortis class blandit mattis eu
-                        elementum pharetra ornare gravida tempor? Diam orci
-                        phasellus erat, malesuada nisi duis torquent. Mi euismod
-                        nostra risus nunc nascetur ut. Gravida inceptos pretium
-                        massa sodales elementum egestas. Nulla commodo dui;
-                        phasellus donec eget vehicula.
+                        OMG Capital Advisors is an investment banking firm with
+                        over 20 years of experience in local and international
+                        financial markets. The company offers comprehensive
+                        strategic financial advisory services in areas such as
+                        corporate finance, mergers and acquisitions, debt
+                        restructuring, and capital raising. It develops tailored
+                        solutions to help clients achieve their growth and value
+                        creation goals. With a team of experts possessing
+                        extensive industry knowledge and in-depth market
+                        analysis, the firm provides significant added value to
+                        its business partners. It aims to create sustainable and
+                        successful financial strategies with a customer-focused
+                        approach.
                      </p>
                   </div>
                </div>
