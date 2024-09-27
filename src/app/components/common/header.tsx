@@ -66,7 +66,8 @@ const Header = () => {
                </div>
             </div>
          </div>
-         <Container>
+
+         <div className="w-full max-w-[1350px] mx-auto h-auto flex xl:px-0 px-3">
             <div className="header-inner-container flex w-full lg:h-[80px] h-[78px]  justify-between items-center relative z-[400]">
                <div className="logo-container">
                   <a href="/">
@@ -186,12 +187,12 @@ const Header = () => {
                   </div>
                </div>
 
-               <div className="menu-icon lg:hidden flex ml-4 items-center gap-2">
+               <div className="menu-icon lg:hidden flex  items-center gap-1">
                   <div className="link">
                      <a
                         href="/investment-application"
                         target="_blank"
-                        className="w-full h-full px-5 py-2 bg-logoRed rounded-md hover:bg-black duration-300 transition-colors text-white hover:text-white font-semibold text-[13px]"
+                        className="w-full h-full px-3 py-2 bg-logoRed rounded-md hover:bg-black duration-300 transition-colors text-white hover:text-white font-semibold text-[12px]"
                      >
                         VDMK Issuance
                      </a>
@@ -204,7 +205,7 @@ const Header = () => {
                   />
                </div>
             </div>
-         </Container>
+         </div>
       </div>
    );
 };

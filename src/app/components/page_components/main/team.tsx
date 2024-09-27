@@ -21,22 +21,36 @@ const Team = () => {
                         About OMG Capital Team
                      </h5>
                   </div>
-                  <div className="title-container2 mt-5">
+                  {/* <div className="title-container2 mt-5">
                      <h5 className="text-2xl font-bold">
                         Our team provides the best investment advising.
                      </h5>
-                  </div>
+                  </div> */}
                   <div className="text-container-inside mt-6">
                      <p className="text-[15px] font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        The OMG Capital Team is composed of highly experienced
+                        investment banking professionals with a diverse
+                        background in finance, economics, and strategic
+                        consulting. With over 20 years of combined experience in
+                        local and international markets, the team brings a
+                        wealth of expertise in corporate finance, mergers and
+                        acquisitions, debt restructuring, and capital raising.
+                        Each member is dedicated to delivering exceptional value
+                        through a client-centric approach, leveraging deep
+                        industry knowledge and strategic insight to provide
+                        customized financial solutions that support sustainable
+                        growth and long-term success for their clients.
+                        <br></br>
+                        <br></br>
+                        Their collaborative and dynamic team environment fosters
+                        innovative thinking and meticulous execution, ensuring
+                        that clients receive the highest standard of service in
+                        every engagement. The OMG Capital Team is committed to
+                        building strong, lasting relationships with their
+                        clients, guiding them through complex financial
+                        transactions and strategic decisions with integrity,
+                        professionalism, and a focus on achieving optimal
+                        outcomes.
                      </p>
                   </div>
                </div>
