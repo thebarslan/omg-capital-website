@@ -46,7 +46,7 @@ const Team = () => {
                   </div>
                   <div className="button-container mt-3">
                      <a
-                        href="/about-us"
+                        href="/team"
                         className="px-8 py-[6px] bg-[#ffffff2e] border-2 border-black text-blackk rounded-md hover:bg-logoRed hover:border-logoRed hover:text-white transition-all duration-300 text-[15px]"
                      >
                         READ MORE
