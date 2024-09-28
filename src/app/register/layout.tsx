@@ -1,7 +1,7 @@
 import "../globals.css";
 export const metadata = {
-   title: "OMG Capital - Investment Application",
-   description: "OMG Capital - Investment Application",
+   title: "OMG Capital - Create Account",
+   description: "OMG Capital Create Account",
 };
 
 export default function RootLayout({

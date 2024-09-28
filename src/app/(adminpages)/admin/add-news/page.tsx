@@ -23,11 +23,20 @@ const AddNews = () => {
             </div>
             <div className="input-container flex items-start gap-[2px] mt-6 text-black flex-col">
                <h5 className="text-[13px] font-medium pl-[2px]">News Text</h5>
-               <textarea className="w-[600px] h-[50px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium" />
+               <textarea className="w-[300px] h-[50px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium" />
             </div>
             <div className="input-container flex items-start gap-[2px] mt-6 text-black flex-col">
                <h5 className="text-[13px] font-medium pl-[2px]">
                   News Image - Add an image url
+               </h5>
+               <input
+                  type="text"
+                  className="w-[300px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
+               />
+            </div>
+            <div className="input-container flex items-start gap-[2px] mt-6 text-black flex-col">
+               <h5 className="text-[13px] font-medium pl-[2px]">
+                  News Link - Add the link of the news
                </h5>
                <input
                   type="text"

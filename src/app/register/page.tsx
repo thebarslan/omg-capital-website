@@ -2,13 +2,13 @@
 import React, { useState } from "react";
 import Logo from "../assets/images/logo.png";
 import Image from "next/image";
-import Step1 from "../components/page_components/investment-application/step1";
-import Step2 from "../components/page_components/investment-application/step2";
-import Step3 from "../components/page_components/investment-application/step3";
+import Step1 from "../components/page_components/register/step1";
+import Step2 from "../components/page_components/register/step2";
+
 const InvestmentApplicationPage = () => {
    const [step, setStep] = useState(1);
    const handleStep = () => {
-      if (step === 3) {
+      if (step === 2) {
          console.log("Navigate");
          return;
       }
@@ -26,12 +26,11 @@ const InvestmentApplicationPage = () => {
                      className="w-[150px] h-auto"
                   />
                   <div className="steps">
-                     <h5 className="text-black">Step {step}/3</h5>
+                     <h5 className="text-black">Step {step}/2</h5>
                   </div>
                </div>
                {step === 1 && <Step1 />}
                {step === 2 && <Step2 />}
-               {step === 3 && <Step3 />}
             </div>
             <div className="bottom flex lg:flex-row flex-col items-center justify-between w-full h-20 px-10 lg:py-0 py-[10px] text-black">
                <div className="left flex items-center text-[12px] font-medium">
@@ -45,8 +44,7 @@ const InvestmentApplicationPage = () => {
                         onClick={handleStep}
                      >
                         {step === 1 && "Next"}
-                        {step === 2 && "Next"}
-                        {step === 3 && "Finish"}
+                        {step === 2 && "Finish"}
                      </button>
                   </div>
                </div>

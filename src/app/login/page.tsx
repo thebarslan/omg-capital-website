@@ -32,7 +32,7 @@ const Login = () => {
                <div className="input-container flex items-start gap-0 mt-3 text-black flex-col">
                   <h5 className="text-[13px] font-medium pl-[2px]">Password</h5>
                   <input
-                     type="text"
+                     type="password"
                      className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
                   />
                </div>
@@ -83,7 +83,7 @@ const Login = () => {
                      HOME
                   </a>
                   <a
-                     href="/"
+                     href="/register"
                      className="hover:bg-black hover:text-white transition-colors duration-300  px-4 py-[6px] bg-logoRed text-white rounded-lg text-[13px]"
                   >
                      REGISTER
