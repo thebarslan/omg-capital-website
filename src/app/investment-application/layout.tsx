@@ -1,4 +1,6 @@
 import "../globals.css";
+import { InvestorProvider } from "@/app/contexts/InvestorContext"; // Adjust the import path as needed
+
 export const metadata = {
    title: "OMG Capital - Investment Application",
    description: "OMG Capital - Investment Application",
@@ -11,7 +13,11 @@ export default function RootLayout({
 }) {
    return (
       <html lang="en">
-         <body>{children}</body>
+         <body>
+            <InvestorProvider>
+               {children}
+            </InvestorProvider>
+         </body>
       </html>
    );
 }

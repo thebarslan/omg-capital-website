@@ -8,7 +8,7 @@ import { FaUsers } from "react-icons/fa";
 import { IoMdArrowBack } from "react-icons/io";
 import { IoMdArrowForward } from "react-icons/io";
 const NavbarLeft = () => {
-   const [isClosed, setIsClosed] = useState(true);
+   const [isClosed, setIsClosed] = useState(false);
    return (
       <>
          <div
@@ -80,6 +80,17 @@ const NavbarLeft = () => {
                      >
                         <FaUsers className="text-[20px]" />
                         {!isClosed && <h5>Users</h5>}
+                     </a>
+                  </div>
+                  <div className="link w-full h-12 shadow-sm flex items-center justify-start  text-[15px] gap-2">
+                     <a
+                        href="/admin/investors"
+                        className={`flex gap-2 items-center justify-start w-full h-full  hover:bg-[#e7e7e7] transition-colors duration-300 ${
+                           isClosed ? "pl-4" : "pl-8"
+                        }`}
+                     >
+                        <FaUsers className="text-[20px]" />
+                        {!isClosed && <h5>Investors</h5>}
                      </a>
                   </div>
                </div>
