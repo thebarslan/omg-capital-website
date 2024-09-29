@@ -62,6 +62,10 @@
    background-image: url("./assets/images/news/news_image.jpg");
    background-size: cover;
 }
+.profile-item {
+   background-image: url("./assets/images/profile/profile.jpg");
+   background-size: cover;
+}
 .shadow {
    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 16px 0px;
 }
