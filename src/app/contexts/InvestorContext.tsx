@@ -1,11 +1,16 @@
 "use client";
 
-import React, { createContext, useContext, useState, ReactNode, useEffect } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  ReactNode,
+  useEffect,
+} from "react";
 import axios from "axios";
 
 // Investor data type
 interface Investor {
-  _id: string;
   name: string;
   surname: string;
   birthDate: string;
@@ -14,7 +19,7 @@ interface Investor {
   email: string;
   city: string;
   province: string;
-  monthlyIncome: string;
+  monthlyIncome: number;
   profession: string;
 }
 
@@ -25,10 +30,12 @@ interface InvestorContextType {
   error: string | null;
   fetchAllInvestors: () => Promise<void>;
   fetchInvestorById: (id: string) => Promise<Investor | null>;
-  addInvestor: (investorData: Omit<Investor, "_id">) => Promise<void>;
+  addInvestor: (investor: Investor) => Promise<void>;
 }
 
-const InvestorContext = createContext<InvestorContextType | undefined>(undefined);
+const InvestorContext = createContext<InvestorContextType | undefined>(
+  undefined
+);
 
 export const useInvestor = (): InvestorContextType => {
   const context = useContext(InvestorContext);
@@ -47,7 +54,8 @@ export const InvestorProvider = ({ children }: InvestorProviderProps) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
-  const BACKEND_URL = process.env.NEXT_PUBLIC_TEMPLATE_BACKEND_URL || "http://localhost:5000";
+  const BACKEND_URL =
+    process.env.NEXT_REACT_TEMPLATE_BACKEND_URL || "http://localhost:5005";
 
   // Fetch all investors
   const fetchAllInvestors = async () => {
@@ -56,11 +64,14 @@ export const InvestorProvider = ({ children }: InvestorProviderProps) => {
       const token = localStorage.getItem("token");
       if (!token) throw new Error("Unauthorized");
 
-      const response = await axios.get<Investor[]>(`${BACKEND_URL}/api/investors`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await axios.get<Investor[]>(
+        `${BACKEND_URL}/api/investors`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       setInvestors(response.data);
     } catch (error) {
       console.error("Failed to fetch investors:", error);
@@ -77,11 +88,14 @@ export const InvestorProvider = ({ children }: InvestorProviderProps) => {
       const token = localStorage.getItem("token");
       if (!token) throw new Error("Unauthorized");
 
-      const response = await axios.get<Investor>(`${BACKEND_URL}/api/investors/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await axios.get<Investor>(
+        `${BACKEND_URL}/api/investors/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       return response.data;
     } catch (error) {
       console.error("Failed to fetch investor by ID:", error);
@@ -93,17 +107,27 @@ export const InvestorProvider = ({ children }: InvestorProviderProps) => {
   };
 
   // Add a new investor
-  const addInvestor = async (investorData: Omit<Investor, "_id">) => {
-    setLoading(true);
+  const addInvestor = async (investor: Investor) => {
     try {
-      const response = await axios.post(`${BACKEND_URL}/api/investors/register`, investorData);
-      setInvestors([...investors, response.data]);
-      alert("Investor registered successfully");
+      const response = await axios.post(
+        `${BACKEND_URL}/api/investors/register`,
+        investor,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response.status === 201) {
+        const registeredInvestor = response.data.investor;
+        setInvestors([...investors, registeredInvestor]);
+        console.log("Investor registered successfully:", registeredInvestor);
+      } else {
+        console.log(response.data.message);
+      }
     } catch (error) {
-      console.error("Failed to register investor:", error);
-      setError("Failed to register investor");
-    } finally {
-      setLoading(false);
+      console.error("Error registering investor:", error);
     }
   };
 

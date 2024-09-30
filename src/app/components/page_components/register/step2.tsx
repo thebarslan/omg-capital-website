@@ -1,11 +1,15 @@
-"use client";
-import React, { useState } from "react";
-import { FaRegEye } from "react-icons/fa";
-import { FaRegEyeSlash } from "react-icons/fa";
+import React from "react";
 
-const Step2 = () => {
-   const [seePassword, setSeePassword] = useState(false);
-   const [seePasswordAgain, setSeePasswordAgain] = useState(false);
+interface Step2Props {
+   formData: {
+      username: string;
+      password: string;
+      confirmPassword: string;
+   };
+   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+const Step2: React.FC<Step2Props> = ({ formData, handleInputChange }) => {
    return (
       <>
          <div className="title-container w-full items-center mt-8">
@@ -17,50 +21,31 @@ const Step2 = () => {
             <h5 className="text-[13px] font-medium pl-[2px]">Username</h5>
             <input
                type="text"
+               name="username"
+               value={formData.username}
+               onChange={handleInputChange}
                className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
             />
          </div>
          <div className="input-container flex items-start gap-0 mt-5 text-black flex-col relative">
             <h5 className="text-[13px] font-medium pl-[2px]">Password</h5>
-            <div className="input-container relative">
-               <input
-                  type={seePassword ? "text" : "password"}
-                  className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
-               />
-               <div className="absolute right-2 bottom-[6px] z-[300]">
-                  <button
-                     className="flex items-center justify-center"
-                     onClick={() => setSeePassword(!seePassword)}
-                  >
-                     {seePassword ? (
-                        <FaRegEye className="text-logoGray" />
-                     ) : (
-                        <FaRegEyeSlash className="text-logoGray" />
-                     )}
-                  </button>
-               </div>
-            </div>
+            <input
+               type="password"
+               name="password"
+               value={formData.password}
+               onChange={handleInputChange}
+               className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
+            />
          </div>
          <div className="input-container flex items-start gap-0 mt-5 text-black flex-col relative">
-            <h5 className="text-[13px] font-medium pl-[2px]">Password</h5>
-            <div className="input-container relative">
-               <input
-                  type={seePasswordAgain ? "text" : "password"}
-                  className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
-               />
-               <div className="absolute right-2 bottom-[6px] z-[300]">
-                  <button
-                     className="flex items-center justify-center"
-                     onClick={() => setSeePasswordAgain(!seePasswordAgain)}
-                  >
-                     {seePasswordAgain ? (
-                        <FaRegEye className="text-logoGray" />
-                     ) : (
-                        <FaRegEyeSlash className="text-logoGray" />
-                     )}
-                  </button>
-               </div>
-            </div>
+            <h5 className="text-[13px] font-medium pl-[2px]">Confirm Password</h5>
+            <input
+               type="password"
+               name="confirmPassword"
+               value={formData.confirmPassword}
+               onChange={handleInputChange}
+               className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
+            />
          </div>
       </>
    );

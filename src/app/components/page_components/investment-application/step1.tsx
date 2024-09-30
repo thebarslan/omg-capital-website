@@ -1,11 +1,17 @@
 import React from "react";
 
+// Step1Props tipi tanımı
 interface Step1Props {
-  formData: any;
+  formData: {
+    name: string;
+    surname: string;
+    birthDate: string;
+    gender: string;
+  };
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
 }
 
-const Step1 = ({ formData, handleInputChange }: Step1Props) => {
+const Step1: React.FC<Step1Props> = ({ formData, handleInputChange }) => {
   return (
     <>
       <div className="title-container w-full items-center mt-8">
@@ -52,8 +58,8 @@ const Step1 = ({ formData, handleInputChange }: Step1Props) => {
           <option value="" disabled>
             Select your gender
           </option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
         </select>
       </div>
     </>

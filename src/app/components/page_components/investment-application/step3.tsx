@@ -1,11 +1,15 @@
 import React from "react";
 
+// Step3Props tipi tanımı
 interface Step3Props {
-  formData: any;
+  formData: {
+    monthlyIncome: number;
+    profession: string;
+  };
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Step3 = ({ formData, handleInputChange }: Step3Props) => {
+const Step3: React.FC<Step3Props> = ({ formData, handleInputChange }) => {
   return (
     <>
       <div className="title-container w-full items-center mt-8">

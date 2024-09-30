@@ -274,7 +274,7 @@ const News = () => {
   // Sayfa yüklendiğinde tüm haberleri getir
   useEffect(() => {
     fetchAllNews();
-  }, [fetchAllNews]);
+  }, []);
 
   return (
     <div className="w-full h-auto team flex flex-col">

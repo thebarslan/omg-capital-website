@@ -28,15 +28,9 @@ const LatestNews = () => {
       };
 
       checkScreenSize();
-
-      const timeout = setTimeout(() => {
-         checkScreenSize();
-      }, 1000);
-
       window.addEventListener("resize", checkScreenSize);
 
       return () => {
-         clearTimeout(timeout);
          window.removeEventListener("resize", checkScreenSize);
       };
    }, []);
@@ -73,13 +67,13 @@ const LatestNews = () => {
                                  rel="noopener noreferrer"
                               >
                                  <div className="absolute w-full h-full top-0 left-0 bg-[#00000070] z-[100]"></div>
-                                 <div className="w-full h-[300px]">
+                                 <div className="relative w-full h-[300px]">
                                     <Image
                                        src={newsItem.imageUrl || "/default-image.png"}
                                        alt="news-img"
-                                       className="object-cover w-full h-[300px]"
-                                       width={300}
-                                       height={300}
+                                       className="object-cover w-full h-full"
+                                       layout="fill"
+                                       objectFit="cover"
                                     />
                                  </div>
                                  <div className="absolute w-full h-[106px] bg-[#00000082] left-0 bottom-0 flex flex-col py-1 px-4 text-white"></div>

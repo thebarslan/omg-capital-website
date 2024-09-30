@@ -51,12 +51,12 @@ export const NewsProvider = ({ children }: NewsProviderProps) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
+  const BACKEND_URL = "http://localhost:5005";
+
   const fetchAllNews = async () => {
     setLoading(true);
     try {
-      const response = await axios.get<NewsItem[]>(
-        `${process.env.NEXT_PUBLIC_TEMPLATE_BACKEND_URL}/api/news`
-      );
+      const response = await axios.get<NewsItem[]>(`${BACKEND_URL}/api/news`);
       setNews(response.data);
     } catch (error) {
       console.error("Failed to fetch news:", error);
@@ -70,7 +70,7 @@ export const NewsProvider = ({ children }: NewsProviderProps) => {
     setLoading(true);
     try {
       const response = await axios.get<NewsItem>(
-        `${process.env.NEXT_PUBLIC_TEMPLATE_BACKEND_URL}/api/news/${id}`
+        `${BACKEND_URL}/api/news/${id}`
       );
       return response.data;
     } catch (error) {
@@ -83,24 +83,26 @@ export const NewsProvider = ({ children }: NewsProviderProps) => {
   };
 
   // createNews fonksiyonunu güncelleme
+  // createNews fonksiyonunu güncelleme
   const createNews = async (newsItem: Omit<NewsItem, "_id">) => {
     try {
       const token = localStorage.getItem("token"); // Token'ı localStorage'dan al
-      const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_TEMPLATE_BACKEND_URL}/api/news`,
-        newsItem,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
+
+      if (!token) {
+        throw new Error("Authorization token is missing. Please log in.");
+      }
+
+      const response = await axios.post(`${BACKEND_URL}/api/news`, newsItem, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
       if (response.status === 201) {
         setNews([response.data, ...news]);
       } else {
         console.error(response.data);
-        throw new Error("News creation failed", response.data);
+        throw new Error("News creation failed");
       }
     } catch (error) {
       console.error("Failed to create news:", error);
@@ -113,7 +115,7 @@ export const NewsProvider = ({ children }: NewsProviderProps) => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put<NewsItem>(
-        `${process.env.NEXT_PUBLIC_TEMPLATE_BACKEND_URL}/api/news/${id}`,
+        `${BACKEND_URL}/api/news/${id}`,
         updatedNews,
         {
           headers: {
@@ -134,11 +136,14 @@ export const NewsProvider = ({ children }: NewsProviderProps) => {
     setLoading(true);
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`${process.env.NEXT_PUBLIC_TEMPLATE_BACKEND_URL}/api/news/${id}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      await axios.delete(
+        `${process.env.NEXT_PUBLIC_TEMPLATE_BACKEND_URL}/api/news/${id}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       setNews(news.filter((item) => item._id !== id));
     } catch (error) {
       console.error("Failed to delete news:", error);

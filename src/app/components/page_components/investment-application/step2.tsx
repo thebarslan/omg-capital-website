@@ -1,11 +1,17 @@
 import React from "react";
 
+// Step2Props tipi tanımı
 interface Step2Props {
-  formData: any;
+  formData: {
+    phoneNumber: string;
+    email: string;
+    city: string;
+    province: string;
+  };
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Step2 = ({ formData, handleInputChange }: Step2Props) => {
+const Step2: React.FC<Step2Props> = ({ formData, handleInputChange }) => {
   return (
     <>
       <div className="title-container w-full items-center mt-8">

@@ -7,7 +7,21 @@ import { IoMdAddCircle } from "react-icons/io";
 import { FaUsers } from "react-icons/fa";
 import { IoMdArrowBack } from "react-icons/io";
 import { IoMdArrowForward } from "react-icons/io";
+import { useUser } from "@/app/contexts/AuthContext";
+import { useRouter } from "next/navigation";
+
 const NavbarLeft = () => {
+   const { logout } = useUser();
+   const router = useRouter();
+
+   const handleLogout = async () => {
+      try {
+         await logout();
+         router.push("/");
+      } catch (error) {
+         console.log(error);         
+      }
+   }
    const [isClosed, setIsClosed] = useState(false);
    return (
       <>
@@ -91,6 +105,17 @@ const NavbarLeft = () => {
                      >
                         <FaUsers className="text-[20px]" />
                         {!isClosed && <h5>Investors</h5>}
+                     </a>
+                  </div>
+                  <div className="link w-full h-12 shadow-sm flex items-center justify-start  text-[15px] gap-2">
+                     <a
+                        onClick={handleLogout}
+                        className={`flex gap-2 items-center justify-start w-full h-full cursor-pointer  hover:bg-[#e7e7e7] transition-colors duration-300 ${
+                           isClosed ? "pl-4" : "pl-8"
+                        }`}
+                     >
+                        <FaUsers className="text-[20px]" />
+                        {!isClosed && <h5>logout</h5>}
                      </a>
                   </div>
                </div>
