@@ -72,19 +72,23 @@ const Team = () => {
                         <div className="text-container w-full flex-1 flex flex-col h-full lg:gap-6 gap-5 lg:pt-10 pt-6">
                            <h5 className="text-3xl font-bold">Onur AYDOĞAN</h5>
                            <h5 className="lg:text-base text-[15px] text-logoGray">
-                              Managing Partner and CIO of OMG Capital Advisors,
-                              Onur Aydoğan has held senior leadership positions
-                              within Wellington Management, Merrill Lynch and
-                              RBS. Only in the last 5 years, he has originated
-                              and executed $USD 500mln structured financial
-                              deals for a variety of different industries and
-                              financial institutions in London and Istanbul. He
-                              has led deals with DFIs that target SMEs around
-                              responsible lending in excess of EUR 150mln EUR
-                              for Turkey. He was responsible for managing EM
-                              fixed income portfolios with AUM over USD 1bln
-                              across different asset classes in Boston and New
-                              York.{" "}
+                              Onur Aydoğan is the Managing Partner and Chief
+                              Investment Officer of OMG Capital Advisors. He has
+                              held senior leadership roles at renowned
+                              institutions, including Wellington Management,
+                              Merrill Lynch, and RBS in both Boston and London.
+                              Onur has extensive experience in originating and
+                              executing structured lending deals across various
+                              industries and financial institutions in emerging
+                              markets. He has led transactions with Development
+                              Finance Institutions (DFIs), focusing on
+                              responsible lending practices for SMEs in Turkey.
+                              Additionally, he managed Emerging Market fixed
+                              income portfolios exceeding USD 1 billion in
+                              assets under management (AUM) across multiple
+                              asset classes while based in Boston and New York.
+                              Onur holds an MBA and a BSc in Mechanical
+                              Engineering from the University of Massachusetts.
                            </h5>
                         </div>
                      </div>
