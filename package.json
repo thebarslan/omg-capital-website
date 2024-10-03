@@ -1,5 +1,5 @@
 {
-  "name": "omg-capital-website",
+  "name": "omg-capital-rc",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,24 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "crypto-js": "^4.2.0",
+    "axios": "^1.7.7",
     "hamburger-react": "^2.5.1",
-    "jwt-decode": "^4.0.0",
-    "next": "14.2.13",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "15.0.0-rc.0",
+    "next-intl": "^3.20.0",
+    "react": "19.0.0-rc-f994737d14-20240522",
+    "react-dom": "19.0.0-rc-f994737d14-20240522",
     "react-icons": "^5.3.0",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
-    "@types/crypto-js": "^4.2.2",
-    "@types/jwt-decode": "^3.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "axios": "^1.7.7",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.13",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
