@@ -32,14 +32,14 @@ const Header = ({ locale }: { locale: string }) => {
           <a href="/about-us">{t("about-us")}</a>
           <a href="/our-firm">{t("our-firm")}</a>
           <a href="/news">{t("news")}</a>
-          {/* <div className="link mt-6">
+          <div className="link mt-6">
             <a
               href="/login"
               className="w-full h-full px-6 py-2 bg-logoRed rounded-sm hover:bg-black duration-300 transition-colors text-white hover:text-white font-semibold"
             >
               {t("investor-login")}
             </a>
-          </div> */}
+          </div>
         </div>
         <div className="social-icons flex mt-8 gap-4">
           <div className="link h-10 flex items-center">
@@ -49,9 +49,6 @@ const Header = ({ locale }: { locale: string }) => {
               className=" text-black hover:text-logoRed w-full h-full flex items-center gap-4 rounded-tl-[6px] rounded-tr-[6px]"
             >
               <FaLinkedin className="w-auto h-7" />
-            </a>
-            <a href="/contact-us">
-              {t("contact")}
             </a>
           </div>
           <div className="link h-10 flex items-center">
@@ -205,14 +202,14 @@ const Header = ({ locale }: { locale: string }) => {
                 {t("vdmk-issuance")}
               </a>
             </div>
-            {/* <div className="link">
+            <div className="link">
               <a
                 href="/login"
                 className="w-full h-full px-6 py-2 bg-logoRed rounded-md hover:bg-black duration-300 transition-colors text-white hover:text-white font-semibold text-[14px]"
               >
                 {t("investor-login")}
               </a>
-            </div> */}
+            </div>
           </div>
 
           <div className="menu-icon lg:hidden flex  items-center gap-1">

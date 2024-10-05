@@ -38,10 +38,10 @@ const Step1 = () => {
                className="w-[200px] h-[28px] rounded-sm outline-none border-2 border-[#cecece] text-black pl-[4px] text-[13px] font-medium"
             >
                <option value="" disabled selected>
-                  Select your gender
+                  {t("select-gender")}
                </option>
-               <option value="male">Male</option>
-               <option value="female">Female</option>
+               <option value="male">{t("male")}</option>
+               <option value="female">{t("female")}</option>
             </select>
          </div>
       </>

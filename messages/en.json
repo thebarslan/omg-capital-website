@@ -102,6 +102,43 @@
     "profession": "Profession",
     "next-button": "Next",
     "submit-button": "Submit",
+    "redirect": "Redirecting...",
+    "select-gender": "Select your gender",
+    "male": "Male",
+    "female": "Female"
+  },
+  "LoginPage": {
+    "information": "Please log in to your account.",
+    "username": "Username",
+    "password": "Password",
+    "accept": "Accept",
+    "user-agrement": "user agrement",
+    "login-button": "LOGIN",
+    "redirect": "Redirecting...",
+    "forgot-username": "Forgot your username ?",
+    "forgot-password": "Forgot your password ?",
+    "marker": "© 2011 - 2024 OMG CAPITAL ADVISORS GROUP",
+    "home": "HOME",
+    "register": "REGISTER"
+  },
+  "RegisterPage": {
+    "step": "Step",
+    "next": "Next",
+    "finish": "Submit",
+    "marker": "© 2011 - 2024 OMG CAPITAL ADVISORS GROUP",
+    "title": "Register to create an account.",
+    "name": "Name",
+    "surname": "Surname",
+    "email": "Email",
+    "gender": "Gender",
+    "select-gender": "Select your gender",
+    "male": "Male",
+    "female": "Female",
+    "username": "Username",
+    "password": "Password",
+    "confirm-password": "Confirm Password",
+    "show-password": "Show Password",
+    "hide-password": "Hide Password",
     "redirect": "Redirecting..."
   }
 }

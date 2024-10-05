@@ -48,6 +48,10 @@ const News = () => {
 
   // Haber açıklamasını kısaltmak için truncate fonksiyonu
   const truncate = (text: string, maxLength: number) => {
+    if (!text) {
+      return "";  // Eğer text undefined veya boşsa, boş string döndür
+    }
+    
     return text.length > maxLength
       ? text.substring(0, maxLength) + "..."
       : text;

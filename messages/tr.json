@@ -102,6 +102,43 @@
     "profession": "Meslek",
     "next-button": "İleri",
     "submit-button": "Gönder",
+    "redirect": "Yönlendiriliyorsunuz...",
+    "select-gender": "Cinsiyet seçiniz",
+    "male": "Erkek",
+    "female": "Kadın"
+  },
+  "LoginPage": {
+    "information": "Lütfen hesabınıza giriş yapın.",
+    "username": "Kullanıcı Adı",
+    "password": "Şifre",
+    "accept": "Kabul Et",
+    "user-agrement": "kullanıcı sözleşmesi",
+    "login-button": "GİRİŞ",
+    "redirect": "Yönlendiriliyor...",
+    "forgot-username": "Kullanıcı adınızı mı unuttunuz ?",
+    "forgot-password": "Şifrenizi mi unuttunuz ?",
+    "marker": "© 2011 - 2024 OMG CAPITAL ADVISORS GROUP",
+    "home": "ANA SAYFA",
+    "register": "KAYIT OL"
+  },
+  "RegisterPage": {
+    "step": "Adım",
+    "next": "İleri",
+    "finish": "Tamamla",
+    "marker": "© 2011 - 2024 OMG CAPITAL ADVISORS GROUP",
+    "title": "Bir hesap oluşturmak için kayıt olun.",
+    "name": "Ad",
+    "surname": "Soyad",
+    "email": "E-posta",
+    "gender": "Cinsiyet",
+    "select-gender": "Cinsiyetinizi seçin",
+    "male": "Erkek",
+    "female": "Kadın",
+    "username": "Kullanıcı Adı",
+    "password": "Şifre",
+    "confirm-password": "Şifreyi Onayla",
+    "show-password": "Şifreyi Göster",
+    "hide-password": "Şifreyi Gizle",
     "redirect": "Yönlendiriliyorsunuz..."
   }
 }
