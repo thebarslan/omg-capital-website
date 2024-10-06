@@ -15,7 +15,7 @@ interface NewsItem {
   date: string;
   link: string;
   image: string;
-  description: string;
+  content: string;
 }
 
 const News = () => {
@@ -107,7 +107,7 @@ const News = () => {
                       <h5 className="text-[12px]">{item.date}</h5>
                     </div>
                     <p className="text-[14px] font-medium">
-                      {truncate(item.description, 100)}{" "}
+                      {truncate(item.content, 100)}{" "}
                       {/* 100 karaktere kadar kısalt */}
                     </p>
                   </div>
@@ -139,7 +139,7 @@ const News = () => {
         <EnhancedModal
           onClose={() => setSelectedNews(null)}
           title={selectedNews.title}
-          description={selectedNews.description}
+          description={selectedNews.content}
           date={selectedNews.date}
           image={selectedNews.image}
           link={selectedNews.link}

@@ -17,8 +17,14 @@ const Login = () => {
   const router = useRouter(); // Router'ı tanımladık
 
   const handleSubmit = async (e: React.FormEvent) => {
+    if(!username || !password) {
+      alert(t("error-message"));
+      return;
+    }
+    
     e.preventDefault();
     setLoading(true);
+    
     try {
       await login(username, password);
       // Login başarılıysa, 5 saniye sonra yönlendirme yap

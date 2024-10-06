@@ -105,7 +105,9 @@
     "redirect": "Yönlendiriliyorsunuz...",
     "select-gender": "Cinsiyet seçiniz",
     "male": "Erkek",
-    "female": "Kadın"
+    "female": "Kadın",
+    "error-message": "Lütfen eksik bilgileri tamamlayınız!",
+    "required": "Gerekli"
   },
   "LoginPage": {
     "information": "Lütfen hesabınıza giriş yapın.",
@@ -119,7 +121,8 @@
     "forgot-password": "Şifrenizi mi unuttunuz ?",
     "marker": "© 2011 - 2024 OMG CAPITAL ADVISORS GROUP",
     "home": "ANA SAYFA",
-    "register": "KAYIT OL"
+    "register": "KAYIT OL",
+    "error-message": "Lütfen eksik bilgileri tamamlayınız!"
   },
   "RegisterPage": {
     "step": "Adım",
@@ -139,6 +142,7 @@
     "confirm-password": "Şifreyi Onayla",
     "show-password": "Şifreyi Göster",
     "hide-password": "Şifreyi Gizle",
-    "redirect": "Yönlendiriliyorsunuz..."
+    "redirect": "Yönlendiriliyorsunuz...",
+    "error-message": "Lütfen eksik bilgileri tamamlayınız!"
   }
 }

@@ -105,7 +105,9 @@
     "redirect": "Redirecting...",
     "select-gender": "Select your gender",
     "male": "Male",
-    "female": "Female"
+    "female": "Female",
+    "error-message": "Please fill in the missing information!",
+    "required": "Required"
   },
   "LoginPage": {
     "information": "Please log in to your account.",
@@ -119,7 +121,8 @@
     "forgot-password": "Forgot your password ?",
     "marker": "© 2011 - 2024 OMG CAPITAL ADVISORS GROUP",
     "home": "HOME",
-    "register": "REGISTER"
+    "register": "REGISTER",
+    "error-message": "Please fill in the missing information!"
   },
   "RegisterPage": {
     "step": "Step",
@@ -139,6 +142,7 @@
     "confirm-password": "Confirm Password",
     "show-password": "Show Password",
     "hide-password": "Hide Password",
-    "redirect": "Redirecting..."
+    "redirect": "Redirecting...",
+    "error-message": "Please fill in the missing information!"
   }
 }

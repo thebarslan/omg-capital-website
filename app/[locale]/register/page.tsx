@@ -31,9 +31,16 @@ const InvestmentApplicationPage = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleStep = async () => {
+    if (!email && !name && !surname) {
+      alert(t("error-message"));
+      return;
+    }
     if (step === 2) {
       if (password !== confirmPassword) {
         alert("Passwords do not match");
+        return;
+      } else if (!username && !password) {
+        alert (t("error-message"));
         return;
       }
 

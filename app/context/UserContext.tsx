@@ -117,6 +117,65 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
+  // Register Investor function
+  const register_investor = async (
+    name: string,
+    surname: string,
+    email: string,
+    gender: string,
+    birthDate: string,
+    phoneNumber: string,
+    city: string,
+    province: string,
+    profession: string,
+    monthlyIncome: string
+  ) => {
+    try {
+      const response = await axios.post(
+        "http://localhost:5005/api/investors",
+        {
+          name,
+          surname,
+          email,
+          gender,
+          birthDate,
+          phoneNumber,
+          city,
+          province,
+          profession,
+          monthlyIncome
+        }
+      );
+
+      if (response.status === 201) {
+        // Başarılı kayıt
+        console.log("Kayıt başarıyla tamamlandı:", response.data.message);
+      } else {
+        // Beklenmedik bir durum
+        console.error("Kayıt sırasında bir sorun oluştu:", response.data);
+      }
+    } catch (error: unknown) {
+      // error'ın tipini 'unknown' olarak belirtiyoruz
+      if (axios.isAxiosError(error)) {
+        // Axios hata yanıtını işliyoruz
+        if (error.response) {
+          console.error("Kayıt başarısız:", error.response.data.message);
+        //   alert(`Registration failed: ${error.response.data.message}`);
+        } else {
+          console.error("Axios error occurred:", error.message);
+        //   alert("An error occurred with Axios");
+        }
+      } else if (error instanceof Error) {
+        // Diğer hataları işliyoruz
+        console.error("Kayıt sırasında bir hata oluştu:", error.message);
+        // alert("An unknown error occurred during registration");
+      } else {
+        console.error("Bilinmeyen bir hata oluştu.");
+        // alert("An unknown error occurred.");
+      }
+    }
+  };
+
   // Login function
   const login = async (username: string, password: string) => {
     try {
